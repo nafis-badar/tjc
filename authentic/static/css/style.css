@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Lato;
+}
+.main {
+    background-color: #492565;
+    height: 100vh;
+}
+.logo {
+    margin: 35px 0;
+    text-align: center;
+}
+.login-form {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 6px 7px 12px 4px #0e0e0e82;
+    width: 40%;
+    margin: 0px auto;
+}
+.logo a img {
+    animation: bounceIn 0.6s;
+    transform: rotate(0deg) scale(1) translateZ(0);
+    transition: all 0.4s cubic-bezier(0.8, 1.8, 0.75, 0.75);
+    cursor: pointer;
+}
+.logo a img:hover {
+    transform: rotate(0deg) scale(1.2);
+}
+.form-check {
+    margin-bottom: 20px !important;
+}
+.login-form h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #2d2d2d;
+}
+.fa-eye {
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    font-size: 15px;
+    color: #a7a7a7;
+}
+.form-group {
+    margin-bottom: 1rem;
+    position: relative;
+}
+.form-control {
+    border-radius: 25px;
+    font-size: 14px;
+    padding: 5px 20px;
+    margin-bottom: 30px;
+    height: 45px;
+}
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #492565;
+}
+.btn {
+    background-color: #492565;
+    padding: 8px 50px;
+    border-radius: 50px;
+    color: #ffffff;
+    height: 45px;
+    font-size: 16px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+.btn:hover {
+    box-shadow: 1px 1px 16px 2px #e2e2e2;
+    transform: translateY(-3px);
+    color: rgb(255, 255, 255);
+}
+.forget-pass a {
+    float: right;
+    color: #888888;
+    font-size: 13px;
+    text-decoration: underline;
+    position: relative;
+    top: 3px;
+}
+p {
+    font: 33px sans-serif;
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+p.background {
+    position: relative;
+    z-index: 1;
+}
+.term-conditions {
+    font-weight: 600;
+    color: #3f51b5 !important;
+    padding-left: 6px;
+}
+p.background:before {
+    border-top: 1px solid #dfdfdf;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+span {
+    background: #fff;
+    padding: 0 15px;
+    font-size: 14px;
+}
+.social-login {
+    text-align: center;
+}
+.form-check-label {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #492565;
+    font-weight: 600;
+}
+.social-login ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.social-login ul li a img {
+    width: 25px;
+    height: 25px;
+    transition: 0.3s;
+}
+.social-login ul li a img:hover {
+    box-shadow: 1px 1px 16px 2px #e2e2e2;
+    transform: translateY(-5px);
+    color: rgb(255, 255, 255);
+}
+.no-account {
+    text-align: center;
+    margin-top: 30px;
+}
+.no-account a {
+    font-weight: 600;
+    color: #3f51b5;
+    text-decoration: underline;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+/* index-1-css */
+.main-1{
+    background-color: #ffffff;
+    height: 100vh;    
+}
+.login-form-1 {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 15px;
+    width: 40%;
+    margin: 0px auto;
+    /* box-shadow: 0 0 53px 7px #9a8dc175; */
+    box-shadow: 0 0 18px 8px #9a8dc130;
+}
+.login-form-1 h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #2d2d2d;
+}
+/* responsive */
+@media screen and (max-width: 1200px) {
+    .login-form {
+        width: 50%;
+    }
+    .login-form-1 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .login-form {
+        width: 60%;
+    }
+    .login-form-1 {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .login-form {
+        width: 80%;
+        padding: 30px;
+    }
+    .login-form-1 {
+        width: 80%;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .login-form {
+        width: 100%;
+    }
+    .login-form-1 {
+        width: 100%;
+    }
+}
