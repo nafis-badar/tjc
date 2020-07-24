@@ -7,6 +7,7 @@ from django.contrib import auth
 from django.contrib import messages
 from django.db import IntegrityError
 from .models import Todo
+from django.utils import timezone
 
 
 def index(request):
@@ -85,3 +86,20 @@ def createtodo(request):
             return redirect("currenttodo")
         except ValueError:
             return redirect('createtodo',{'error':"bad data inserted"})
+
+def completetodo(request,todo_pk):
+    todos = get_object_or_404(Todo, id=todo_pk, user=request.user)
+    if request.method=="POST":
+        todos.datecompleted=timezone.now()
+        todos.save()
+        return redirect("currenttodo")
+
+def deletetodo(request,todo_pk):
+    todos = get_object_or_404(Todo, id=todo_pk, user=request.user)
+    if request.method=="POST":
+        todos.delete()
+        return redirect("currenttodo")
+
+
+
+
